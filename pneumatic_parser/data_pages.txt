@@ -4,8 +4,10 @@ http://aircrafter.ru/index.php?page=shop.product_details&flypage=flypage.tpl&pro
 http://aircrafter.ru/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=25
 http://aircrafter.ru/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=26
 http://aircrafter.ru/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=27
-http://aircrafter.ru/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=34
-http://aircrafter.ru/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=35
-http://aircrafter.ru/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=36
-https://industriation.ru/dsbc-40-80-ppva-n3/
-https://industriation.ru/dsbc-125-125-ppva-n3/
+http://dalse.ru/shop/pnevmocilindry/shtokovye/dsbc
+http://dalse.ru/shop/pnevmocilindry/shtokovye/dnc
+http://dalse.ru/shop/pnevmocilindry/shtokovye/dsbg
+https://industriation.ru/c1137/?page=#
+https://industriation.ru/c1158/?page=#
+https://industriation.ru/c3835/?page=#
+https://industriation.ru/c1150/?page=#

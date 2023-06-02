@@ -3,6 +3,8 @@ from lxml import etree
 import requests
 from ftfy import fix_encoding
 from aircrafter_parser import *
+from industriation_parser import *
+from dalse_parser import *
 from substring_search import *
 
 _name_object = ""
@@ -23,24 +25,26 @@ _HEADERS = ({'User-Agent':
 #-------------------------------------#
 
 #-------------------------------------#
-_datafile = open("data_pages.txt", "r")
-while True:
-    _url_line = _datafile.readline()
-    _url_line = _url_line.strip()
-    print(_url_line)
+_datafile = open("data_pages.txt", "r") #открываем файл со страницами для обхода 
+while True:  
+    _url_line = _datafile.readline() #считываем файл построчно
+    _url_line = _url_line.strip() #разделяем на подстроки
+    print(_url_line) 
     if not _url_line:
         break
-    _url_type = search_substring(_url_line)
-    if _url_type == "aircrafter":
+    #try:
+    _url_type = search_substring(_url_line) #находим тип вхождения и определяем тип ресурса
+    if _url_type == "aircrafter": #если нашли - то преходим в соответствующую функцию парсера 
         parse_aircrafter(_url_line,_HEADERS)     
     if _url_type == "pneumax":
         _pre_csv_construction = "pneumax - in developing"
     if _url_type == "dalse":
-        _pre_csv_construction = "dalse - in developing"
+        parse_dalse(_url_line,_HEADERS)  
     if _url_type == "industriation":
-        _pre_csv_construction = "industriation - in developing"
+        parse_indestriation(_url_line,_HEADERS)  
+    #except:
+    #    print('unknown link')
 _datafile.close
 #-------------------------------------# substring searching
-
-
+print("Работа завершена")
 #-------------------------------------#
